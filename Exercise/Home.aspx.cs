@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
-public partial class _Default : System.Web.UI.Page
+public partial class Home : System.Web.UI.Page
    {
       protected void Page_Load(object sender, EventArgs e)
       {

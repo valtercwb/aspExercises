@@ -14,7 +14,7 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    My ASP.NET Application
+                   1stProject
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -31,8 +31,13 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Products.aspx" Text="Produtos"/>
+                        <asp:MenuItem NavigateUrl="~/Services.aspx" Text="Servicos" />
+                        <asp:MenuItem NavigateUrl="~/Blog.aspx" Text="Blog" />
+                        <asp:MenuItem NavigateUrl="~/Customers.aspx" Text="Clientes" />
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Sobre" />
+                        <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contato" />
                     </Items>
                 </asp:Menu>
             </div>

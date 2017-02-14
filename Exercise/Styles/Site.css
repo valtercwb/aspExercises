@@ -99,7 +99,7 @@ first child of the left and right table columns */
     position: relative;
     margin: 0px;
     padding: 0px;
-    background: #4b6c9e;
+    background: grey;
     width: 100%;
 }
 
@@ -144,33 +144,34 @@ first child of the left and right table columns */
 
 div.hideSkiplink
 {
-    background-color:#3a4f63;
+    background-color:Silver;
     width:100%;
 }
 
 div.menu
 {
-    padding: 4px 0px 4px 8px;
+    padding: 10px 10px 10px 8px;
 }
 
 div.menu ul
 {
     list-style: none;
     margin: 0px;
-    padding: 0px;
+    padding: 2px;
     width: auto;
 }
 
 div.menu ul li a, div.menu ul li a:visited
 {
-    background-color: #465c71;
+    background-color:White;
     border: 1px #4e667d solid;
-    color: #dde4ec;
+    color: Black;
     display: block;
     line-height: 1.35em;
-    padding: 4px 20px;
+    padding: 4px 40px;
     text-decoration: none;
     white-space: nowrap;
+    
 }
 
 div.menu ul li a:hover
