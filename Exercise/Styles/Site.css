@@ -3,7 +3,7 @@
 
 body   
 {
-    background: #b6b7bc;
+    background: black;
     font-size: .80em;
     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
     margin: 0px;
@@ -86,6 +86,10 @@ first child of the left and right table columns */
 /* PRIMARY LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 
+.title
+{
+    font-size:30px;
+    }
 .page
 {
     width: 960px;
@@ -97,21 +101,28 @@ first child of the left and right table columns */
 .header
 {
     position: relative;
+    height: 165px;
     margin: 0px;
     padding: 0px;
-    background: grey;
     width: 100%;
+    top: 0px;
+    left: 0px;
+    background:url("../images/banner.jpg");
 }
 
 .header h1
 {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
     font-weight: 700;
     margin: 0px;
     padding: 0px 0px 0px 20px;
     color: #f9f9f9;
-    border: none;
     line-height: 2em;
     font-size: 2em;
+    width: 276px;
+    font-family:Times New Roman;
 }
 
 .main
@@ -142,10 +153,12 @@ first child of the left and right table columns */
 /* TAB MENU   
 ----------------------------------------------------------*/
 
+
 div.hideSkiplink
 {
     background-color:Silver;
     width:100%;
+    margin-bottom:10px;
 }
 
 div.menu

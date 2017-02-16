@@ -3,8 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+<br />
 <div>Rows:
-<asp:TextBox ID="txtRows" runat="server" />
+<asp:TextBox ID="txtRows" runat="server"/>
 &nbsp;Cols:
 <asp:TextBox ID="txtCols" runat="server" />
 <br /><br />
@@ -22,7 +23,27 @@ Text="Create" />
 </asp:Table>
 </div>
 
+<br /><br /><br /><br />
+<h2>Regular Expressions</h2>
 
+<asp:Panel ID="Panel1" runat="server">
+<asp:TextBox ID="TextBox1" ValidationGroup="Group1" runat="server" />
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+ErrorMessage="*Required" ValidationGroup="Group1"
+runat="server" ControlToValidate="TextBox1" />
+<asp:Button ID="Button1" Text="Validate Group1"
+ValidationGroup="Group1" runat="server" />
+</asp:Panel>
+<br />
+<asp:Panel ID="Panel2" runat="server">
+<asp:TextBox ID="TextBox2" ValidationGroup="Group2"
+runat="server" />
+<asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+ErrorMessage="*Required" ValidationGroup="Group2"
+ControlToValidate="TextBox2" runat="server" />
+<asp:Button ID="Button2" Text="Validate Group2"
+ValidationGroup="Group2" runat="server" />
+</asp:Panel>
 </asp:Content>
 
 

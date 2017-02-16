@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
-
+<br />
 <div>
 <!-- Here are the controls: -->
 Choose a background color:<br />
@@ -35,8 +35,6 @@ Height="150px" /><br /><br /><br />
 <asp:Image ID="imgDefault" runat="server" Width="212px"
 Height="160px" />
 </asp:Panel>
-</form>
-</body>
-</html>
+
 </asp:Content>
 

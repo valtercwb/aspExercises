@@ -44,6 +44,8 @@ public partial class Blog : System.Web.UI.Page
                 // Put the TableCell in the TableRow.
                 rowNew.Controls.Add(cellNew);
             }
+
+
         }
     }
 }

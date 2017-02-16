@@ -4,6 +4,7 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <br />
     <div>
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>

@@ -7,14 +7,23 @@
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 959px;
+            height: 177px;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
     <div class="page">
         <div class="header">
             <div class="title">
+               <br />
+
                 <h1>
-                   1stProject
+                   TechPc
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -27,13 +36,28 @@
                         [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
                     </LoggedInTemplate>
                 </asp:LoginView>
+                <br />
+                <br />
+                <br />
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/Products.aspx" Text="Produtos"/>
-                        <asp:MenuItem NavigateUrl="~/Services.aspx" Text="Servicos" />
+                        <asp:MenuItem NavigateUrl="~/Products.aspx" Text="Produtos">
+                            <asp:MenuItem Text="Lancamentos" Value="Lancamentos"></asp:MenuItem>
+                            <asp:MenuItem Text="Celulares" Value="Celulares"></asp:MenuItem>
+                            <asp:MenuItem Text="Placas Mãe" Value="Hardwares"></asp:MenuItem>
+                            <asp:MenuItem Text="Fontes" Value="Fontes"></asp:MenuItem>
+                            <asp:MenuItem Text="HeadPhones" Value="HeadPhones"></asp:MenuItem>
+                            <asp:MenuItem Text="Cabos" Value="Cabos"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Services.aspx" Text="Servicos">
+                            <asp:MenuItem Text= "Assistencia Técnica" Value="Assistencia"></asp:MenuItem>
+                            <asp:MenuItem Text= "Orçamento" Value="Orçamento"></asp:MenuItem>
+                            <asp:MenuItem Text= "Disk entrega" Value="DiskEntrega"></asp:MenuItem>
+                            <asp:MenuItem Text= "Compra Usado" Value="CompraUsado"></asp:MenuItem>
+                        </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Blog.aspx" Text="Blog" />
                         <asp:MenuItem NavigateUrl="~/Customers.aspx" Text="Clientes" />
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Sobre" />
@@ -42,6 +66,7 @@
                 </asp:Menu>
             </div>
         </div>
+        <br /><br />
         <div class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
         </div>
@@ -49,7 +74,9 @@
         </div>
     </div>
     <div class="footer">
-        
+        <p>
+        Copyright &copy 2017 All Rights Reserved
+        </p>
     </div>
     </form>
 </body>
